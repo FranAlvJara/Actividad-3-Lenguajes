@@ -385,7 +385,7 @@ background-attachment: fixed;
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Formulario de búsqueda de vuelos */
+/* Formulario de búsqueda de vuelos mejorado */
 .formulario-BuscarVuelos {
     display: flex;
     flex-direction: column;
@@ -396,14 +396,29 @@ background-attachment: fixed;
 .formulario-BuscarVuelos label {
     font-weight: bold;
     color: var(--blanco);
+    margin-bottom: -5px; /* Acerca la etiqueta al input */
+    font-size: 0.95rem;
 }
 
 .formulario-BuscarVuelos input {
-    background: #ffffff; /* Fondo blanco para que los inputs sean fáciles de ver */
-    color: #333333; /* Texto oscuro para los inputs */
-    border: none;
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco ligeramente translúcido */
+    color: #333;
+    border: 2px solid transparent; /* Borde preparado para el efecto focus */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 12px 15px; /* Más espacio interno para que no esté apretado */
+    font-size: 1rem;
+    transition: all 0.3s ease; /* Transición suave para el brillo */
+    outline: none;
 }
 
+/* Efecto cuando el usuario hace clic en el recuadro */
+.formulario-BuscarVuelos input:focus {
+    background: #ffffff;
+    border-color: var(--acento); /* El borde se vuelve dorado */
+    box-shadow: 0 0 8px rgba(254, 187, 2, 0.4); /* Resplandor dorado suave */
+}
+
+/* Estilo para el botón de búsqueda */
 .formulario-BuscarVuelos button {
     background-color: var(--acento);
     color: #1b1b1b;
@@ -413,11 +428,16 @@ background-attachment: fixed;
     padding: 15px;
     cursor: pointer;
     font-size: 1.1rem;
-    transition: background 0.3s;
+    text-transform: uppercase; /* Letras mayúsculas para más impacto */
+    letter-spacing: 1px;
+    transition: transform 0.2s, background 0.3s;
+    margin-top: 10px;
 }
 
 .formulario-BuscarVuelos button:hover {
-    background-color: #e5a902; /* Un tono más oscuro del acento */
+    background-color: #e5a902;
+    transform: translateY(-2px); /* El botón "salta" un poco al pasar el ratón */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Aplicable a los contenedores de Asia y Vuelos */
