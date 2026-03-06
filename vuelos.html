@@ -25,21 +25,259 @@
     </header>
 
     <main>
-    <h2>Buscar vuelos</h2>
 
-    <form>
-        <label>Origen:</label>
-        <input type="text" name="origen"><br><br>
+        <section class="heroVuelos">
+            <div class="hero-content">
+                <h2>Encuentra los mejores vuelos</h2>
+                <p>Compara precios y reserva tu vuelo ideal.</p>
+            </div>
+        </section>
 
-        <label>Destino:</label>
-        <input type="text" name="destino"><br><br>
+        <section class="info-Vuelos">
+                <div class="container-VuelosNosotros">
+                    <h2>¿Por qué reservar tus vuelos con nosotros?</h2>
+                    <p class="texto-largo">
+                        En <strong>Empresa de Viajes</strong>, no solo ofrecemos una amplia selección de vuelos, sino que también nos comprometemos a brindarte la mejor experiencia de reserva. Nuestro sistema de comparación de precios te permite encontrar las mejores ofertas en tiempo real, asegurándote que obtienes el mejor valor por tu dinero.
+                    </p>
+                    <p class="texto-largo">
+                        Además, contamos con un equipo de atención al cliente disponible 24/7 para ayudarte en cada paso del proceso. Ya sea que necesites asistencia para cambiar tu vuelo o resolver cualquier duda, estamos aquí para ti. Con nosotros, reservar tus vuelos es fácil, rápido y seguro.
+                    </p>
+                </div>
 
-        <label>Fecha:</label>
-        <input type="date" name="fecha"><br><br>
+                <div class="container-VuelosReservas">
+                    <h2>Beneficios de reservar con nosotros</h2>
+                    <ul>
+                        <li>Acceso a ofertas exclusivas y descuentos especiales.</li>
+                        <li>Política de cancelación flexible para mayor tranquilidad.</li>
+                        <li>Asistencia personalizada durante todo tu viaje.</li>
+                        <li>Garantía de mejor precio en todos nuestros vuelos.</li>
+                    </ul>
+                </div>
+        </section>
 
-        <button type="submit">Buscar vuelo</button>
-        </form>
-    </main>
+        <section class="container-VuelosPopulares">
+
+            <div class="container-VuelosPopularesInfo">
+                <h2>Explora nuestros destinos más populares</h2>
+                <p class="texto-largo">
+                    Estos destinos son solo una muestra de las increíbles opciones de vuelos que ofrecemos. Ya sea que busques una escapada urbana, una aventura cultural o unas vacaciones relajantes, tenemos el vuelo perfecto para ti. Explora nuestro catálogo y encuentra tu próximo destino hoy mismo.
+                </p>
+            </div>
+
+            <section class="destinos-container">
+
+                <div class="destino">
+                    <img src="imagenes/tokio.jpg" alt="Ciudad de Tokio" class="img-destino">
+                    <h3>Tokio, Japón</h3>
+                    <p>Una mezcla increíble entre tradición y tecnología moderna.</p>
+                </div>
+
+                <div class="destino">
+                    <img src="imagenes/londres.jpg" alt="Big Ben en Londres" class="img-destino">
+                    <h3>Londres, Reino Unido</h3>
+                    <p>Cultura, mercadillos y una atmósfera cosmopolita inigualable.</p>
+                </div>
+
+                <div class="destino">
+                    <img src="imagenes/bali.jpg" alt="Playas de Bali" class="img-destino">
+                    <h3>Bali, Indonesia</h3>
+                    <p>Playas paradisíacas y naturaleza espectacular para relajarse.</p>
+                </div>
+
+            </section>
+        </section>
+
+        <section class="container-VueloDestinosDisponibles">
+            <h2>Destinos disponibles</h2>
+            <p class="texto-largo">
+                Ofrecemos vuelos a una amplia variedad de destinos en todo el mundo. Desde las vibrantes ciudades de Europa hasta los exóticos paraísos tropicales, tenemos opciones para todos los gustos y presupuestos. Explora nuestros destinos disponibles y encuentra el vuelo perfecto para tu próxima aventura.
+            </p>
+            <table class="tabla-todosDestinos">
+                <thead>
+                    <tr>
+                        <th>Destino</th>
+                        <th>Precio</th>
+                        <th>Duración del vuelo</th>
+                        <th>Aerolínea</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>París, Francia</td>
+                        <td>$700</td>
+                        <td>8 horas</td>
+                        <td>Air France</td>
+                    </tr>
+                    <tr>
+                        <td>Roma, Italia</td>
+                        <td>$650</td>
+                        <td>7 horas</td>
+                        <td>Alitalia</td>
+                    </tr>
+                    <tr>
+                        <td>Londres, Reino Unido</td>
+                        <td>$600</td>
+                        <td>6 horas</td>
+                        <td>British Airways</td>
+                    </tr>
+                    <tr>
+                        <td>Tokio, Japón</td>
+                        <td>$800</td>
+                        <td>12 horas</td>
+                        <td>Japan Airlines</td>
+                    </tr>
+                    <tr>
+                        <td>Bali, Indonesia</td>
+                        <td>$500</td>
+                        <td>10 horas</td>
+                        <td>Garuda Indonesia</td>
+                    </tr>
+                    <tr>
+                        <td>Bangkok, Tailandia</td>
+                        <td>$550</td>
+                        <td>9 horas</td>
+                        <td>Thai Airways</td>
+                    </tr>
+                    <tr>
+                        <td>Barcelona, España</td>
+                        <td>$750</td>
+                        <td>9 horas</td>
+                        <td>Iberia</td>
+                    </tr>
+                    <tr>
+                        <td>Ámsterdam, Países Bajos</td>
+                        <td>$680</td>
+                        <td>8 horas</td>
+                        <td>KLM</td>    
+                    </tr>
+                    <tr>
+                        <td>Sídney, Australia</td>
+                        <td>$900</td>
+                        <td>15 horas</td>
+                        <td>Qantas</td> 
+                    </tr>
+                    <tr>
+                        <td>Ciudad de México, México</td>
+                        <td>$650</td>
+                        <td>11 horas</td>
+                        <td>Aeroméxico</td>
+                    </tr>
+                    <tr>
+                        <td>Buenos Aires, Argentina</td>
+                        <td>$700</td>
+                        <td>13 horas</td>
+                        <td>Aerolíneas Argentinas</td>
+                    </tr>
+                    <tr>
+                        <td>Río de Janeiro, Brasil</td>
+                        <td>$750</td>
+                        <td>14 horas</td>
+                        <td>LATAM Airlines</td>
+                    </tr>
+                    <tr>
+                        <td>El Cairo, Egipto</td>
+                        <td>$600</td>
+                        <td>10 horas</td>
+                        <td>EgyptAir</td>
+                    </tr>
+                    <tr>
+                        <td>Estambul, Turquía</td>
+                        <td>$650</td>
+                        <td>9 horas</td>
+                        <td>Turkish Airlines</td>
+                    </tr>
+                    <tr>
+                        <td>Dubai, Emiratos Árabes Unidos</td>
+                        <td>$800</td>
+                        <td>12 horas</td>
+                        <td>Emirates</td>
+                    </tr>
+
+                </tbody>   
+        </section>
+
+        <section class="ofertasVuelos">
+
+            <div class="container-ofertasVuelos">
+                <h2>Ofertas exclusivas en vuelos</h2>
+                <p class="texto-ofertaVuelos">
+                    No pierdas la oportunidad de aprovechar nuestras ofertas exclusivas en vuelos. Desde descuentos especiales hasta promociones de última hora, tenemos las mejores opciones para que puedas viajar a tus destinos favoritos sin gastar de más. Mantente atento a nuestras ofertas y reserva tu vuelo ideal al mejor precio.
+                </p>
+            </div>
+
+            <div class="container-ofertas">
+                <table class="tabla-ofertasVuelos">
+                    <thead>
+                        <tr>
+                            <th>Destino</th>
+                            <th>Precio</th>
+                            <th>Descuento</th>
+                            <th>Fecha de salida</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tokio, Japón</td>
+                            <td>$800</td>
+                            <td>20%</td>
+                            <td>15 de agosto de 2026</td>
+                        </tr>
+                        <tr>
+                            <td>Londres, Reino Unido</td>
+                            <td>$600</td>
+                            <td>15%</td>
+                            <td>10 de septiembre de 2026</td>
+                        </tr>
+                        <tr>
+                            <td>Bali, Indonesia</td>
+                            <td>$500</td>
+                            <td>25%</td>
+                            <td>5 de octubre de 2026</td>
+                        </tr>
+                        <tr>
+                            <td>París, Francia</td>
+                            <td>$700</td>
+                            <td>10%</td>
+                            <td>20 de noviembre de 2026</td>
+                        </tr>
+                        <tr>
+                            <td>Roma, Italia</td>
+                            <td>$650</td>
+                            <td>18%</td>
+                            <td>30 de diciembre de 2026</td>   
+                        </tr>
+                        <tr>
+                            <td>Bangkok, Tailandia</td>
+                            <td>$550</td>
+                            <td>22%</td>
+                            <td>25 de enero de 2027</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+        <section class="buscarVuelos">
+            <div class="containerBuscarVuelos">
+                <h2>Busca tu vuelo ideal</h2>
+                <form class="formulario-BuscarVuelos">
+                    <label for="origen">Origen:</label>
+                    <input type="text" id="origen" name="origen" placeholder="Ciudad de origen" required>
+
+                    <label for="destino">Destino:</label>
+                    <input type="text" id="destino" name="destino" placeholder="Ciudad de destino" required>
+
+                    <label for="fechaIda">Fecha de ida:</label>
+                    <input type="date" id="fechaIda" name="fechaIda" required>
+
+                    <label for="fechaVuelta">Fecha de vuelta:</label>
+                    <input type="date" id="fechaVuelta" name="fechaVuelta">
+
+                    <button type="submit">Buscar vuelos</button>
+                </form>
+            </div>
+        </section>
 
     <footer>
         <p>&copy; 2026 Empresa de Viajes. Todos los derechos reservados.</p>

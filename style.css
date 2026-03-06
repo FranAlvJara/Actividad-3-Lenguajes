@@ -144,18 +144,6 @@ background-attachment: fixed;
     background-attachment: fixed;
 }
 
-/*Añado el heroAsia*/
-.heroAsia {
-min-height: 70vh;
-display: flex;
-align-items: center;
-justify-content: center;
-background-image: url(imagenes/asia.jpg);
-background-size: cover;
-background-position: center;
-background-attachment: fixed;
-}
-
 /* Contenedor de los destinos */
 .destinos-container {
     display: flex;
@@ -245,4 +233,219 @@ background-attachment: fixed;
     border-radius: 8px;
     padding: 12px;
     cursor: pointer;
+}
+
+/*A partir de aquí está todo lo relacionado con Asia.*/
+/* ----------- SECCIÓN INFO DE ASIA ----------- */
+
+.info-Asia{
+    padding: 60px 20px;
+}
+
+/*Imagen de fondo para la sección de Asia*/
+.heroAsia {
+min-height: 70vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background-image: url(imagenes/asia.jpg);
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+
+/* Todos los contenedores de texto de Asia */
+
+.container-elegirAsia,
+.container-ofertas,
+.container-actividadesAsia,
+.container-gastronomiaAsia,
+.container-culturaAsia,
+.container-seguridadAsia,
+.container-dondeViajar,
+.container-testimonios{
+
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+
+    background: rgba(255,255,255,0.08);
+    border-radius: 10px;
+
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+/* Títulos dentro de los containers */
+
+.container-elegirAsia h2,
+.container-ofertas h2,
+.container-actividadesAsia h2,
+.container-gastronomiaAsia h2,
+.container-culturaAsia h2,
+.container-seguridadAsia h2,
+.container-dondeViajar h2{
+
+    color: var(--acento);
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+/* Textos */
+
+.texto-elegirAsia,
+.texto-ofertaAsia,
+.texto-actividadesAsia,
+.texto-gastronomiaAsia,
+.texto-culturaAsia,
+.texto-seguridadAsia,
+.texto-dondeViajarAsia{
+
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* CONTENEDOR DE TESTIMONIOS */
+
+.container-testimonios{
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* CADA TESTIMONIO */
+
+.container-1testimonio{
+    background: rgba(255,255,255,0.1);
+    border: 1px solid var(--blanco);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* TEXTO DEL TESTIMONIO */
+
+.texto-testimonioAsia{
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/*A partir de aquí está todo lo relacionado con el apartado de vuelos.*/
+/* ----------- SECCIÓN VUELOS ----------- */
+
+/* Imagen de fondo para la sección de Vuelos */
+.heroVuelos {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(imagenes/vuelos.jpg); /* Asegúrate de tener esta imagen */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Contenedores de información (similares a los de Asia) */
+.container-VuelosNosotros,
+.container-VuelosReservas,
+.container-VuelosPopularesInfo,
+.container-VueloDestinosDisponibles,
+.container-ofertasVuelos,
+.containerBuscarVuelos {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Títulos de las secciones de vuelos */
+.container-VuelosNosotros h2,
+.container-VuelosReservas h2,
+.container-VuelosPopularesInfo h2,
+.container-VueloDestinosDisponibles h2,
+.container-ofertasVuelos h2,
+.containerBuscarVuelos h2 {
+    color: var(--acento);
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+/* Estilo para las listas de beneficios */
+.container-VuelosReservas ul {
+    margin-top: 15px;
+    padding-left: 25px;
+    font-size: 1.2rem;
+}
+
+.container-VuelosReservas li {
+    margin-bottom: 10px;
+}
+
+/* Estilo para las tablas de vuelos (Destinos y Ofertas) */
+.tabla-todosDestinos,
+.tabla-ofertasVuelos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.tabla-todosDestinos th,
+.tabla-todosDestinos td,
+.tabla-ofertasVuelos th,
+.tabla-ofertasVuelos td {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 12px;
+    text-align: left;
+}
+
+.tabla-todosDestinos th,
+.tabla-ofertasVuelos th {
+    background-color: var(--principal);
+    color: var(--acento);
+    font-weight: bold;
+}
+
+.tabla-todosDestinos tr:hover,
+.tabla-ofertasVuelos tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Formulario de búsqueda de vuelos */
+.formulario-BuscarVuelos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.formulario-BuscarVuelos label {
+    font-weight: bold;
+    color: var(--blanco);
+}
+
+.formulario-BuscarVuelos input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--blanco);
+}
+
+.formulario-BuscarVuelos button {
+    background-color: var(--acento);
+    color: #1b1b1b;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background 0.3s;
+}
+
+.formulario-BuscarVuelos button:hover {
+    background-color: #e5a902; /* Un tono más oscuro del acento */
 }

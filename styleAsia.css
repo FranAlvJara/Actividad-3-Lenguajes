@@ -1,0 +1,175 @@
+:root {
+    --principal:  #0d58c0; 
+    --acento: #febb02;    
+    --fondo: #f4f7f6;     
+    --blanco: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; 
+    background-color: var(--principal);
+    color:#ffffff;
+    line-height: 1.6; 
+}
+
+header {
+    background-color: var(--principal);
+    color: var(--blanco);
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Para que siempre esté por encima de las fotos */
+}
+
+
+ /* Para centrar el texto */
+header h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Para que se vean las subpáginas en linea y sin el punto feo */
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Separación entre enlaces */
+}
+
+/* Estilo de los enlaces */
+header nav a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: var(--acento); /* Al pasar el ratón se pone dorado */
+}
+
+.container {
+    max-width: 800px; 
+    margin: 0 auto;   
+}
+
+.destino {
+    flex: 1; /* Para que todos midan lo mismo */
+    min-width: 250px;
+    max-width: 350px;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid var(--blanco); 
+    border-radius: 10px; 
+}
+
+/* Las imágenes de los destinos */
+.img-destino {
+    width: 100%; 
+    height: 200px;
+    object-fit: cover; /* Recorta la imagen sin deformarla */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/*A partir de aquí está todo lo relacionado con Asia.*/
+/* ----------- SECCIÓN INFO DE ASIA ----------- */
+
+.info-Asia{
+    padding: 60px 20px;
+}
+
+/*Imagen de fondo para la sección de Asia*/
+.heroAsia {
+min-height: 70vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background-image: url(imagenes/asia.jpg);
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+
+/* Todos los contenedores de texto de Asia */
+
+.container-elegirAsia,
+.container-ofertas,
+.container-actividadesAsia,
+.container-gastronomiaAsia,
+.container-culturaAsia,
+.container-seguridadAsia,
+.container-dondeViajar,
+.container-testimonios{
+
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+
+    background: rgba(255,255,255,0.08);
+    border-radius: 10px;
+
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+/* Títulos dentro de los containers */
+
+.container-elegirAsia h2,
+.container-ofertas h2,
+.container-actividadesAsia h2,
+.container-gastronomiaAsia h2,
+.container-culturaAsia h2,
+.container-seguridadAsia h2,
+.container-dondeViajar h2{
+
+    color: var(--acento);
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+/* Textos */
+
+.texto-elegirAsia,
+.texto-ofertaAsia,
+.texto-actividadesAsia,
+.texto-gastronomiaAsia,
+.texto-culturaAsia,
+.texto-seguridadAsia,
+.texto-dondeViajarAsia{
+
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* CONTENEDOR DE TESTIMONIOS */
+
+.container-testimonios{
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* CADA TESTIMONIO */
+
+.container-1testimonio{
+    background: rgba(255,255,255,0.1);
+    border: 1px solid var(--blanco);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* TEXTO DEL TESTIMONIO */
+
+.texto-testimonioAsia{
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/*A partir de aquí está todo lo relacionado con el apartado de vuelos.*/
