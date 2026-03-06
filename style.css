@@ -1,0 +1,56 @@
+
+/* Esto son variables para usar todo el rato los mismo colores corporativos*/
+:root {
+    --principal:  #2e6cc2; 
+    --acento: #febb02;    
+    --fondo: #f4f7f6;     
+    --blanco: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; 
+    background-color: var(--principal);
+    color:#ffffff;
+    line-height: 1.6; 
+}
+
+header {
+    background-color: var(--principal);
+    color: var(--blanco);
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Para que siempre esté por encima de las fotos */
+}
+
+
+ /* Para centrar el texto */
+header h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Para que se vean las subpáginas en linea y sin el punto feo */
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Separación entre enlaces */
+}
+
+/* Estilo de los enlaces */
+header nav a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: var(--acento); /* Al pasar el ratón se pone dorado */
+}
