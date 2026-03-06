@@ -148,21 +148,30 @@ background-attachment: fixed;
 /* Contenedor de los destinos */
 .destinos-container {
     display: flex;
-    justify-content: space-around; 
+    justify-content: center; /* Centra las tarjetas si son pocas */
     flex-wrap: wrap; 
-    padding: 50px 20px;
-    gap: 20px;
+    gap: 30px;            /* Espacio uniforme entre tarjetas */
+    padding: 40px 0;      /* Margen arriba y abajo */
+    width: 90%;
+    max-width: 1200px;    /* MISMO ANCHO QUE TUS OTROS BLOQUES */
+    margin: 0 auto;       /* Centra todo el grupo en la página */
 }
 
 /* Cada destino */
 .destino {
-    flex: 1; /* Para que todos midan lo mismo */
-    min-width: 250px;
-    max-width: 350px;
+    flex: 1; 
+    min-width: 300px;     /* Evita que se hagan demasiado estrechas */
+    max-width: 380px;     /* Evita que se hagan gigantes en pantallas grandes */
+    background: rgba(255, 255, 255, 0.1); /* Fondo sutil para que pegue con el resto */
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 12px;
     text-align: center;
-    padding: 15px;
-    border: 1px solid var(--blanco); 
-    border-radius: 10px; 
+    transition: transform 0.3s ease; /* Pequeño efecto visual */
+}
+
+.destino:hover {
+    transform: translateY(-5px); /* Se eleva un poquito al pasar el ratón */
 }
 
 /* Las imágenes de los destinos */
@@ -418,11 +427,10 @@ background-attachment: fixed;
 .container-VuelosNosotros, .container-VuelosReservas, .container-VuelosPopularesInfo, 
 .container-VueloDestinosDisponibles, .container-ofertasVuelos, .containerBuscarVuelos {
 
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 30px;
-
-    /* Color Gris Pizarra que complementa al azul sin ser azul */
+    width: 90%;            /* Ocupa el 90% de la pantalla en dispositivos móviles/tablets */
+    max-width: 1200px;     /* Límite más amplio para pantallas de escritorio */
+    margin: 40px auto;     /* Centrado horizontal */
+    padding: 40px;         /* Un poco más de aire interno */
     background-color: #3f608f; 
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.1);
