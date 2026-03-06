@@ -23,12 +23,13 @@ body {
 }
 
 header {
-    background-color: var(--principal);
+    background-color: #1a1a1a; /* Gris casi negro para contrastar con el azul */
     color: var(--blanco);
     padding: 20px;
     position: sticky;
     top: 0;
-    z-index: 1000; /* Para que siempre esté por encima de las fotos */
+    z-index: 1000;
+    border-bottom: 3px solid var(--acento); /* Línea dorada para unir los estilos */
 }
 
 
@@ -254,27 +255,6 @@ background-position: center;
 background-attachment: fixed;
 }
 
-/* Todos los contenedores de texto de Asia */
-
-.container-elegirAsia,
-.container-ofertas,
-.container-actividadesAsia,
-.container-gastronomiaAsia,
-.container-culturaAsia,
-.container-seguridadAsia,
-.container-dondeViajar,
-.container-testimonios{
-
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 30px;
-
-    background: rgba(255,255,255,0.08);
-    border-radius: 10px;
-
-    border: 1px solid rgba(255,255,255,0.3);
-}
-
 /* Títulos dentro de los containers */
 
 .container-elegirAsia h2,
@@ -345,21 +325,6 @@ background-attachment: fixed;
     background-attachment: fixed;
 }
 
-/* Contenedores de información (similares a los de Asia) */
-.container-VuelosNosotros,
-.container-VuelosReservas,
-.container-VuelosPopularesInfo,
-.container-VueloDestinosDisponibles,
-.container-ofertasVuelos,
-.containerBuscarVuelos {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 30px;
-    background: rgba(255, 255, 255, 0.08);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
 /* Títulos de las secciones de vuelos */
 .container-VuelosNosotros h2,
 .container-VuelosReservas h2,
@@ -389,7 +354,7 @@ background-attachment: fixed;
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(20, 20, 20, 0.26);
 }
 
 .tabla-todosDestinos th,
@@ -401,11 +366,9 @@ background-attachment: fixed;
     text-align: left;
 }
 
-.tabla-todosDestinos th,
-.tabla-ofertasVuelos th {
-    background-color: var(--principal);
+.tabla-todosDestinos th, .tabla-ofertasVuelos th {
+    background-color: #1a1a1a; /* Mismo color que el header para coherencia */
     color: var(--acento);
-    font-weight: bold;
 }
 
 .tabla-todosDestinos tr:hover,
@@ -427,11 +390,9 @@ background-attachment: fixed;
 }
 
 .formulario-BuscarVuelos input {
-    padding: 12px;
-    border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    background: rgba(255, 255, 255, 0.1);
-    color: var(--blanco);
+    background: #ffffff; /* Fondo blanco para que los inputs sean fáciles de ver */
+    color: #333333; /* Texto oscuro para los inputs */
+    border: none;
 }
 
 .formulario-BuscarVuelos button {
@@ -449,3 +410,24 @@ background-attachment: fixed;
 .formulario-BuscarVuelos button:hover {
     background-color: #e5a902; /* Un tono más oscuro del acento */
 }
+
+/* Aplicable a los contenedores de Asia y Vuelos */
+.container-elegirAsia, .container-ofertas, .container-actividadesAsia,
+.container-gastronomiaAsia, .container-culturaAsia, .container-seguridadAsia,
+.container-dondeViajar, .container-testimonios,
+.container-VuelosNosotros, .container-VuelosReservas, .container-VuelosPopularesInfo, 
+.container-VueloDestinosDisponibles, .container-ofertasVuelos, .containerBuscarVuelos {
+
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+
+    /* Color Gris Pizarra que complementa al azul sin ser azul */
+    background-color: #3f608f; 
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+}
+
+
+
