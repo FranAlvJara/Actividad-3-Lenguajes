@@ -120,6 +120,17 @@ background-position: center;
 background-attachment: fixed;
 }
 
+.heroAsia {
+min-height: 70vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background-image: url(imagenes/asia.jpg);
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+
 /* Contenedor de los destinos */
 .destinos-container {
     display: flex;
