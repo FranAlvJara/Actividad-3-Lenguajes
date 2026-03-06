@@ -120,6 +120,30 @@ background-position: center;
 background-attachment: fixed;
 }
 
+/*Añado el heroAmerica*/
+.heroAmerica {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(america.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    }
+
+/* Añado el heroContacto*/
+.heroContacto {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(contacto-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 /* Contenedor de los destinos */
 .destinos-container {
     display: flex;
@@ -147,4 +171,66 @@ background-attachment: fixed;
     object-fit: cover; /* Recorta la imagen sin deformarla */
     border-radius: 8px;
     margin-bottom: 15px;
+}
+/*Añado lista numera con estilo rubrica*/
+.lista-servicios{    
+  margin-top: 20px;
+  padding-left: 20px;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.lista-servicios li {
+    margin-bottom: 10px;
+}
+
+/*Añado tabla con estilo*/
+
+.tabla-info {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: rgba(255,255,255,0.08);
+}
+
+.tabla-info th,
+.tabla-info td {
+  border: 1px solid var(--blanco);
+  padding: 12px;
+  text-align: left;
+}
+
+
+.tabla-info th {
+    background-color: rgba(254,187,2,0.25);
+}
+
+/*Añado estilo para formulario en contactos.PTE REVISAR SI ESTA BIEN */
+
+.form-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.form-contacto input,
+.form-contacto select,
+.form-contacto textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.6);
+  background: rgba(255,255,255,0.1);
+  color: var(--blanco);
+}
+
+.btn {
+    background-color: var(--acento);
+    color: #1b1b1b;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
 }
