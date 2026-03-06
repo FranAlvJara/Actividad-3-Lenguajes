@@ -2,7 +2,7 @@
 /* Esto son variables para usar todo el rato los mismo colores corporativos
 si queréis cambiar colores o lo que sea feel free*/
 :root {
-    --principal:  #2e6cc2; 
+    --principal:  #0d58c0; 
     --acento: #febb02;    
     --fondo: #f4f7f6;     
     --blanco: #ffffff;
@@ -56,6 +56,8 @@ header nav a:hover {
     color: var(--acento); /* Al pasar el ratón se pone dorado */
 }
 
+/* Desde aquí es el estilo de la sección principal y de info de la empresa */
+
 .hero {
 min-height: 70vh;
 display: flex;
@@ -86,21 +88,20 @@ background-attachment: fixed;
     padding: 80px 20px;
     text-align: center;
     text-align: center;
-    font-size: medium;
 }
 
 .container {
-    max-width: 800px; /* Evita que el texto sea demasiado ancho y canse la vista */
-    margin: 0 auto;   /* Centra la caja de texto */
+    max-width: 800px; 
+    margin: 0 auto;   
 }
 
 .info h2 {
     margin-bottom: 30px;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 .texto-largo {
     margin-bottom: 20px;
-    font-size: 1.1rem;
-    text-align: justify; /* Hace que los bloques de texto se vean rectos y profesionales */
+    text-align: justify; 
+    font-size: 1.3rem;
 }
