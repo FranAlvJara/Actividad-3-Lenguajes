@@ -258,6 +258,12 @@ background-attachment: fixed;
   color: var(--blanco);
 }
 
+/* Placeholder en cnegro suave */
+.form-contacto input::placeholder,
+.form-contacto textarea::placeholder {
+  color: var(--negro-suave);
+}
+
 .btn {
     background-color: var(--acento);
     color: #1b1b1b;
