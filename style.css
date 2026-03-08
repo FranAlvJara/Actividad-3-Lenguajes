@@ -107,9 +107,19 @@ background-attachment: fixed;
     margin: 0 auto;   
 }
 
-.info h2 {
+/*cambio a container */
+.container h2 { 
     margin-bottom: 30px;
     font-size: 3rem;
+}
+/*añado h3*/
+.container h3 {
+  color: var(--acento);
+  font-size: 2rem;          
+  text-align: left;        
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-weight: bold;
 }
 
 .texto-largo {
@@ -207,25 +217,28 @@ background-attachment: fixed;
 /*Añado tabla con estilo*/
 
 .tabla-info {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-  background: rgba(255,255,255,0.08);
-}
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: rgba(20, 20, 20, 0.26); /* igual que Vuelos */
 
-.tabla-info th,
-.tabla-info td {
-  border: 1px solid var(--blanco);
-  padding: 12px;
-  text-align: left;
-}
+  }
+  
+  .tabla-info th,
+  .tabla-info td {
+    border: 1px solid rgba(255, 255, 255, 0.3); /* LO QUIERO CAMBIAR  */
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .tabla-info th {
+    background-color:var(--negro-suave); 
+    color: var(--acento); 
+  }
 
 
-.tabla-info th {
-    background-color: rgba(254,187,2,0.25);
-}
 
-/*Añado estilo para formulario en contactos.PTE REVISAR SI ESTA BIEN */
+/*Añado estilo para formulario en contactos*/
 
 .form-contacto {
     display: flex;
