@@ -264,6 +264,11 @@ background-attachment: fixed;
   color: var(--negro-suave);
 }
 
+/* Select del formulario en gris oscuro */
+.form-contacto select {
+    color: var(--negro-suave);
+  }
+
 .btn {
     background-color: var(--acento);
     color: #1b1b1b;
