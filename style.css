@@ -3,10 +3,12 @@
 si queréis cambiar colores o lo que sea feel free
 al tenerlo aquí nos ahorramos tener que ir cambiandolo uno por uno en cada apartado*/
 :root {
-    --principal:  #0d58c0; 
-    --acento: #febb02;    
-    --fondo: #f4f7f6;     
+    --principal: #3665a7;        /* como principal usamos un azul no tan fuerte */
+    --principal-oscuro: #245297; /* usamos una variante de principal que sea azul oscuro */
+    --acento: #febb02;           /* dorado */
+    --fondo: #4175bc;            /* como fondo usamos azul*/
     --blanco: #ffffff;
+    --negro-suave: #1a1a1a;      /* vamos a usar un negro suave para headers y contrastes */
 }
 
 * {
@@ -17,13 +19,13 @@ al tenerlo aquí nos ahorramos tener que ir cambiandolo uno por uno en cada apar
 
 body {
     font-family: Arial, sans-serif; 
-    background-color: var(--principal);
-    color:#ffffff;
+    background-color: var(--fondo);
+    color: var(--blanco); /*color blanco */
     line-height: 1.6; 
 }
 
 header {
-    background-color: #1a1a1a; /* Gris casi negro para contrastar con el azul */
+    background-color: var(--negro-suave); /* Gris casi negro para contrastar con el azul */
     color: var(--blanco);
     padding: 20px;
     position: sticky;
@@ -89,7 +91,7 @@ background-attachment: fixed;
 .info {
     padding: 80px 20px;
     text-align: center;
-    text-align: center;
+    background-color: var(--principal); /*añado el color de la variante fondo*/
 }
 
 .container {
@@ -127,7 +129,7 @@ background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(america.jpg);
+    background-image: url(imagenes/america.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -139,7 +141,7 @@ background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(contacto-hero.jpg);
+    background-image: url(imagenes/contacto.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -244,6 +246,11 @@ background-attachment: fixed;
     padding: 12px;
     cursor: pointer;
 }
+/*añado hover*/
+.btn:hover {
+    background-color: #e5a902;
+    transform: translateY(-2px);
+}
 
 /*A partir de aquí está todo lo relacionado con Asia.*/
 /* ----------- SECCIÓN INFO DE ASIA ----------- */
@@ -328,7 +335,7 @@ background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(imagenes/vuelos.jpg); /* Asegúrate de tener esta imagen */
+    background-image: url(imagenes/vuelos.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
