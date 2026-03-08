@@ -37,8 +37,8 @@
 
   <section class="info">
     <div class="container">
+      <!-- Lista  -->
       <h2>Información de contacto</h2>
-
       <ul class="lista-servicios">
         <li>Email: info@empresadeviajes.com</li>
         <li>Teléfono: +34 600 000 000</li>
@@ -47,7 +47,7 @@
       </ul>
 
       <h2>Formulario</h2>
-
+      <!-- Empiezo aquí con el formulario añadiendo cada label -->
       <form class="form-contacto">
         <label>Nombre</label>
         <input type="text" placeholder="Tu nombre" required>
@@ -55,16 +55,25 @@
         <label>Email</label>
         <input type="email" placeholder="tu@email.com" required>
 
+        <!-- Añado el tlf con pattern como numero español  -->
+        <label>Teléfono</label>
+        <input 
+          type="tel" 
+          placeholder="+34 600 000 000"
+          pattern="^\+[0-9]{1,4}\s?[0-9\s]{6,}$"
+          required
+        >
         <label>Destino</label>
+        <!-- Añado desplegable select  -->
         <select>
           <option>Europa</option>
           <option>América</option>
+          <option>Asia</option>
           <option>Otro</option>
         </select>
-
         <label>Mensaje</label>
         <textarea rows="5" placeholder="Escribe tu mensaje"></textarea>
-
+        <!-- Añado boton de enviar -->
         <button type="submit" class="btn">Enviar</button>
       </form>
     </div>
@@ -78,4 +87,5 @@
 
 </body>
 </html>
+
 
