@@ -59,6 +59,14 @@ header nav a {
 header nav a:hover {
     color: var(--acento); /* Al pasar el ratón se pone dorado */
 }
+/*añado el menu activo */
+header nav a.active {
+  color: var(--acento);
+  border-bottom: 2px solid var(--acento);
+  padding-bottom: 4px;
+}
+
+
 
 /* Desde aquí es el estilo de la sección principal y de info de la empresa */
 
